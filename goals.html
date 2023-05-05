@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html> 
+<head> 
+  <meta charset="UTF-8" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+  <title>Your Goals</title> 
+  <link rel="stylesheet" href="style.css" /> 
+</head> 
+<body> 
+  <div class="form-container"> 
+    <h1>Create Your Goal</h1> 
+    <form id="goal-form"> 
+      <div class="form-group"> 
+        <label for="title">Title</label> 
+        <input type="text" id="title" name="title" required /> 
+      </div> 
+      <div class="form-group"> 
+        <label for="type">Type</label> 
+        <select id="type" name="type"> 
+          <option value="">Choose a type</option> 
+        </select> 
+      </div> 
+      <div class="form-group"> 
+        <label for="importance">Importance</label> 
+        <div class="importance-container"> 
+          <div class="importance-option"> 
+            <input type="radio" id="low" name="importance" value="low" /> 
+            <label for="low">Low</label> 
+          </div> 
+          <div class="importance-option"> 
+            <input type="radio" id="medium" name="importance" value="medium" checked /> 
+            <label for="medium">Medium</label> 
+          </div> 
+          <div class="importance-option"> 
+            <input type="radio" id="high" name="importance" value="high" /> 
+            <label for="high">High</label> 
+          </div> 
+        </div> 
+      </div> 
+      <div class="form-group"> 
+        <label for="deadline">Deadline</label> 
+        <input type="date" id="deadline" name="deadline" /> 
+      </div> 
+      <div class="form-group"> 
+        <label for="notes">Notes</label> 
+        <textarea id="notes" name="notes"></textarea> 
+      </div> 
+      <div class="form-group"> 
+        <button type="submit" id="create-goal-btn">Create Goal</button> 
+      </div> 
+    </form> 
+  </div> 
+  <div id="goal-board"></div> 
+  <script src="script.js"></script> 
+</body> 
+</html>

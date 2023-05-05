@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+font-family: poppins;
+}
+.soso{
+    background:linear-gradient(#ecc1a8,#c87a31)  ;
+    height: 110vh;
+    color: #fff;
+    }
+    h1{
+        text-align: center;
+        padding-top: 50px;
+        font-family:'Times New Roman', Times, serif ;
+    }
+    h1::after{
+        content: '';
+        background:#99490d;
+        display:block;
+        height: 3px; ;
+        width: 300px;
+        margin: 3px auto 0;
+    }
+   .meme{
+
+   padding-top: 80px ;
+   padding-right: 100px;
+   padding-left: 180px;
+
+   }
+    .service .icon{
+    font-size: 30px;
+    margin: 10px auto;
+    padding: 10px;
+    height: 70px;
+    width: 70px;
+    border: 3px solid #99490d;
+    border-radius: 50%;
+    color: #d8c47b;
+    }
+    .service p{
+        font-size: 12px;
+        font-weight: 500;
+        margin-top: 10px;
+        color: #fff;
+        padding: 5px;
+        
+    }
+    .service span{
+    color: #99490d;
+    transition: .5s;
+    }
+    .service .meme :hover{
+        background: linear-gradient(rgba(0, 0, 0, 0.5),#dd8039);
+        cursor: pointer;
+        color: #fff;
+        box-shadow: -5px 5px 10px 0 rgba(0,0,0,4);
+        transition: .5s;
+    }
+    .service .meme:hover .icon{
+        border: 1px solid #fff;
+        color: #fff;
+    }
+    .service .meme:hover p{
+        color: #fff;
+    }
+    .service .meme:hover span{
+        color: #fff;
+    }
